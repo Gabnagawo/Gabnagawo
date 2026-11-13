@@ -27,7 +27,17 @@ I've also used machine learning to identify failure patterns in processors, alon
 | Test management | TestRail, Allure, Jira |
 
 <!-- FEATURED-START -->
-<!-- The "Featured projects" table goes here once projects are published. -->
+#### Featured projects
+
+| Project | What it shows | Measured result |
+|---|---|---|
+| [llm-redteam-suite](https://github.com/Gabnagawo/llm-redteam-suite) | Red-teaming an LLM chatbot against the OWASP Top 10 for LLM Apps, with a rules + LLM-judge evaluator | Hardened target blocks 41/49 attacks vs 15/49 for the vulnerable one; judge agreement κ = 0.875 |
+| [rag-eval-gate](https://github.com/Gabnagawo/rag-eval-gate) | A RAGAS + DeepEval quality gate that comments on PRs and blocks RAG regressions | Faithfulness 0.943 → 0.576 on a degraded retriever, caught by the gate |
+| [qa-mcp-server](https://github.com/Gabnagawo/qa-mcp-server) | An MCP server that gives AI agents allowlisted, audited Android QA tools | 244 tests, 98% coverage, security-focused test suite |
+| [logcat-ai-triage](https://github.com/Gabnagawo/logcat-ai-triage) | Android logcat → clustered, Jira-ready bug reports with embeddings and a local LLM | Clustering ARI 0.966–0.996 on synthetic crash logs |
+| [llm-test-generator](https://github.com/Gabnagawo/llm-test-generator) | User stories → Playwright tests that run on a live app and self-correct | 8/12 valid on the first attempt with qwen3:8b |
+
+All projects run locally with Ollama at zero cost. Every number links to a reproducible run in its repo.
 <!-- FEATURED-END -->
 
 #### Languages
