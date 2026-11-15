@@ -33,6 +33,7 @@ I've also used machine learning to identify failure patterns in processors, alon
 |---|---|---|
 | [llm-redteam-suite](https://github.com/Gabnagawo/llm-redteam-suite) | Red-teaming an LLM chatbot against the OWASP Top 10 for LLM Apps, with a rules + LLM-judge evaluator | Hardened target blocks 41/49 attacks vs 15/49 for the vulnerable one; judge agreement κ = 0.875 |
 | [rag-eval-gate](https://github.com/Gabnagawo/rag-eval-gate) | A RAGAS + DeepEval quality gate that comments on PRs and blocks RAG regressions | Faithfulness 0.943 → 0.576 on a degraded retriever, caught by the gate |
+| [agent-eval-harness](https://github.com/Gabnagawo/agent-eval-harness) | A test harness for tool-using AI agents: deterministic mock environments, pass^k reliability, tool-call correctness, safety and cost | 32 tasks × 3 trials on qwen3:8b: guarded agent 77.1% vs 75.0% success, same pass^3 (71.9%), at 1.88× the tokens |
 | [qa-mcp-server](https://github.com/Gabnagawo/qa-mcp-server) | An MCP server that gives AI agents allowlisted, audited Android QA tools | 244 tests, 98% coverage, security-focused test suite |
 | [logcat-ai-triage](https://github.com/Gabnagawo/logcat-ai-triage) | Android logcat → clustered, Jira-ready bug reports with embeddings and a local LLM | Clustering ARI 0.966–0.996 on synthetic crash logs |
 | [llm-test-generator](https://github.com/Gabnagawo/llm-test-generator) | User stories → Playwright tests that run on a live app and self-correct | 8/12 valid on the first attempt with qwen3:8b |
